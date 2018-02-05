@@ -20,11 +20,12 @@ public class Main {
 
 
     public static void main(String[] args) {
-
-        while(temperature > -460){
-            userInput();
+        int absoluteZero = -460;
+        userInput();
+        while(temperature > absoluteZero){
             toCelsius();
             toUser();
+            userInput();
         }
     }
     }
